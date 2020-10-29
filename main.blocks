@@ -1,0 +1,27 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="($N.E=c-=^x?+oYvUd{F">ball</variable><variable id="NHLY[}SChrx1PTNc}@[d">mySprite</variable><variable type="KIND_SpriteKind" id="KsZy%=z)pl._v?8/urBW">Player</variable><variable type="KIND_SpriteKind" id="R,gnkp[)lzFb_l=h7*e2">Projectile</variable><variable type="KIND_SpriteKind" id="gn.p:D{)C$)9=n3lwDU!">Food</variable><variable type="KIND_SpriteKind" id="MXVy|^:~qT=)2~Q4_aOD">Enemy</variable></variables><block type="pxt-on-start" x="20" y="20"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="NHLY[}SChrx1PTNc}@[d">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . e e e e . . 7 7 . . 
+. . . . . . e d d e . . 7 9 . . 
+. . . . . . e d d e . . 4 . . . 
+. . . . . . . d d . 4 4 . . . . 
+. . . . . . 4 5 5 4 4 . . . . . 
+. . . . . 4 4 4 4 . . . . . . . 
+. . . 9 4 4 . 4 4 . . . . . . . 
+. . . . . . . 4 4 . . . . . . . 
+. . . . . . . 3 3 . . . . . . . 
+. . . . . . 3 3 3 . . . . . . . 
+. . . . . 3 3 . 3 3 . . . . . . 
+. . . . . 3 . . . 3 3 . . . . . 
+. . . . . 3 . . . . 3 . . . . . 
+. . . . 1 1 . . . 1 1 . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="NHLY[}SChrx1PTNc}@[d">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">145</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">60</field></shadow></value><next><block type="function_call"><mutation name="doNothing" functionid="Vq@%47OL+4Hp6}e7VfKl"/></block></next></block></next></block></statement></block><block type="keyonevent" x="654" y="20"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="($N.E=c-=^x?+oYvUd{F">ball</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . 7 7 
+. . . . . . 7 7 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+`</field></shadow></value><value name="sprite"><shadow type="variables_get"><field name="VAR" id="NHLY[}SChrx1PTNc}@[d">mySprite</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">-50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow></value></block></value><next><block type="device_pause"><comment pinned="false" h="80" w="160" relx="10" rely="10">doWhatYouLike();</comment><value name="pause"><shadow type="timePicker"><field name="ms">2000</field></shadow></value><next><block type="function_call"><mutation name="doWhatYouLike" functionid="vKv%!,:#,wEWz-0Qh]@v"/></block></next></block></next></block></statement></block><block type="function_definition" x="350" y="230"><mutation name="doNothing" functionid="Vq@%47OL+4Hp6}e7VfKl"/><field name="function_name">doNothing</field><statement name="STACK"><block type="device_pause"><value name="pause"><shadow type="timePicker"><field name="ms">100</field></shadow></value></block></statement></block><block type="function_definition" x="20" y="307"><mutation name="doWhatYouLike" functionid="vKv%!,:#,wEWz-0Qh]@v"/><field name="function_name">doWhatYouLike</field><statement name="STACK"><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">You Died</field></shadow></value></block></statement></block></xml>
